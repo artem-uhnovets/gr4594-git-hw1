@@ -48,17 +48,7 @@ def equal_value_list_t_set(list_1, list_2):
     return False if not set(list_1).intersection(set(list_2)) else True
 
 # функция, чтобы перемешать (в случайном порядке) и распечатать указанный список.
-def mashup_list(source_list):
-    import random
-    l_index = [i for i in range(len(source_list))]
-    l_result = []
-    rnd_num = random.randint(0, len(source_list))
-    for i in range(len(source_list)):
-        while rnd_num not in l_index:
-            rnd_num = random.randint(0, len(source_list))
-        l_result.append(source_list[rnd_num])
-        l_index.remove(rnd_num)
-    return l_result
+
 
 # быстрая сортировка списка
 
