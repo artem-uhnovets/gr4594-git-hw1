@@ -32,8 +32,7 @@ def gener_list_rnd_randiant_unique(begin_num, end_num, len_list):
             list[i] = random.randint(begin_num, end_num)
     return list
 
-def list_copy(source_list):
-    return [value for value in source_list]
+
 
 # функция, которая принимает два списка 
 # возвращает True, если у них есть хотя бы один общий член.
